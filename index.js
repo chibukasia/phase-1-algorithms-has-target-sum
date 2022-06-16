@@ -1,6 +1,30 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  // let sum;
+  // let arraySum=[];
+  // array.forEach(number1 => {
+  //   array.forEach(number2 =>{
+  //     if (number1 != number2){
+  //       sum = number1 + number2
+  //       arraySum.push(sum);
+  //     }
+      
+  //   })
+  // });
+  // return arraySum.includes(target)
+  let sum;
+  let arraySum = []
+  for (let i=0; i< array.length; i++){
+    for (let j=0; j< array.length; j++){
+      if(i!=j){
+        sum = array[i] + array[j];
+        arraySum.push(sum)
+      }
+    }
+  }
+  return arraySum.includes(target)
+
 }
+
 
 /* 
   Write the Big O time complexity of your function here
