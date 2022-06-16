@@ -1,16 +1,4 @@
 function hasTargetSum(array, target) {
-  // let sum;
-  // let arraySum=[];
-  // array.forEach(number1 => {
-  //   array.forEach(number2 =>{
-  //     if (number1 != number2){
-  //       sum = number1 + number2
-  //       arraySum.push(sum);
-  //     }
-      
-  //   })
-  // });
-  // return arraySum.includes(target)
   let sum;
   let arraySum = []
   for (let i=0; i< array.length; i++){
